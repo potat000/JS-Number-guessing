@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>109306005 楊鈺翎</title>
+</head>
+<body>
+<script>
+	 function floor(){
+		return Math.floor((Math.random()*10)+1);
+	}
+
+	function parse(x){
+		return parseFloat(x);
+	}
+	var input=window.prompt("Guess another number again(1~10)","0");
+	var rand=floor();
+	var number=parse(input);
+	var input1;
+
+   
+	while(number!=rand){
+		input1=window.prompt("Guess another number again(1~10)","0");
+		number=parse(input1);
+	}
+	if(number==rand){
+		alert("Bingo!!!");
+	}
+	
+
+
+</script>
+</body>
+</html>
